@@ -50,7 +50,7 @@ else
 end
 end 
 
-"Player two, please make your move."
+"Player two, please make your move.." 
 
 !valid_move?(board, index)
 
