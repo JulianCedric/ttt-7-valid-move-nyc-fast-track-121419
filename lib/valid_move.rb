@@ -40,4 +40,14 @@ puts !position_taken?(board, index)
 
 # 2019.12.14 - Julian - The return Boolean value of the valid_move? method should be true. So, something other than FALSE, false, and nil. 
 
-def valid_move?()
+def valid_move?(board, index)
+  if 
+  board[index].between?(0,8)
+  &&
+  !position_taken?(board, index)
+else 
+  puts "That is not a valid move. Please select another box on the board."
+end
+
+!valid_move?(board, index)
+
