@@ -42,11 +42,13 @@ puts !position_taken?(board, index)
 
 def valid_move?(board, index)
   if 
-  board[index].between? (0,8) && !position_taken?(board, index)
+  board[index].between?(0,8) && !position_taken?(board, index)
 else 
   puts "That is not a valid move. Please select another box on the board."
 end
 end 
+
+"Player two, please make your move."
 
 !valid_move?(board, index)
 
