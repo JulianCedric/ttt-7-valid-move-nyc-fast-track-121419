@@ -48,6 +48,7 @@ def valid_move?(board, index)
 else 
   puts "That is not a valid move. Please select another box on the board."
 end
+end 
 
 !valid_move?(board, index)
 
