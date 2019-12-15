@@ -43,7 +43,7 @@ position_taken?(board, index)
 # Hmm.. after the program runs the position_taken? method, the return Boolean value is false.. which means that it does not puts the string under else.. and so, continues on to the next line of code, which is the valid_move? method, which should return true in order to continue to the following instructions.  
 
 def valid_move?(board, index)
-  if board[index].between?(0,8) || !position_taken?(board, index)
+  if index.between?(0,8) || !position_taken?(board, index)
 else 
   puts "That is not a valid move. Please select another box on the board."
 end
